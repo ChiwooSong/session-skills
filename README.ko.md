@@ -142,6 +142,10 @@ npm run validate:plugin
 claude plugin eval . --allow-tools Read,Glob,Grep,Bash,Write,Edit --scaffold   # 실제 모델 실행, 과금됨
 ```
 
+`evals/` 의 케이스는 셸 샌드박스 백엔드가 있는 플랫폼(Linux·macOS, Windows 에서는 실행기가 Bash
+허용을 거부함)과 LLM 판정용 API 키가 필요합니다. 그것이 없으면 각 케이스의 `scaffold.sh` 로 만든
+저장소에 같은 프롬프트를 직접 실행해 확인할 수 있습니다.
+
 릴리스: `package.json`, `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json` 의 버전을
 올리고 `CHANGELOG.md` 항목을 추가한 뒤 `vX.Y.Z` 태그를 푸시합니다. 릴리스 워크플로가 trusted
 publishing(provenance 포함)으로 npm 에 게시하고, 레지스트리 tarball 과 `SHA256SUMS` 로 GitHub

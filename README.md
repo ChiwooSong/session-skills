@@ -144,6 +144,10 @@ npm run validate:plugin
 claude plugin eval . --allow-tools Read,Glob,Grep,Bash,Write,Edit --scaffold   # real model runs, billed
 ```
 
+The eval cases under `evals/` need a platform with a shell sandbox backend (Linux or macOS; on
+Windows the runner refuses to grant Bash) and an API key for the LLM judge. Without those, the same
+prompts can be run by hand against a repository built with each case's `scaffold.sh`.
+
 Releases: bump the version in `package.json`, `.claude-plugin/plugin.json` and
 `.claude-plugin/marketplace.json`, add a `CHANGELOG.md` entry, tag `vX.Y.Z` and push the tag. The
 release workflow publishes to npm with trusted publishing (provenance attached) and creates the
