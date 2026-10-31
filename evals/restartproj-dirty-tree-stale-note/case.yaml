@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: restartproj-dirty-tree-stale-note
+expected_outcome: |
+  A short briefing that narrates the commit history, explains that src/math.js holds an unfinished
+  `mul` function as uncommitted work, reads the handoff note in .claude/handoff.md, notices that `sub`
+  was committed after the note was written (the note is stale by one commit), runs no fetch, pull or
+  other mutating git command, and ends with a concrete resume point: finish `mul` and add tests.
+context:
+  scaffold_script: scaffold.sh

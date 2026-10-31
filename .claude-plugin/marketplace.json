@@ -1,0 +1,29 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "session-skills",
+  "owner": {
+    "name": "Woody Song",
+    "url": "https://github.com/ChiwooSong"
+  },
+  "metadata": {
+    "description": "Session continuity skills for Claude Code: /handoff and /restartproj",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "session-skills",
+      "source": "./",
+      "description": "Session continuity for Claude Code: /handoff saves a recency-weighted handoff note at the end of a session; /restartproj briefs you from git history and that note at the start of the next one.",
+      "version": "1.0.0",
+      "category": "productivity",
+      "tags": [
+        "handoff",
+        "session",
+        "memory",
+        "git",
+        "resume",
+        "continuity"
+      ]
+    }
+  ]
+}

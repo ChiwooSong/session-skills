@@ -1,0 +1,9 @@
+node_modules/
+*.tgz
+.claude/settings.local.json
+evals/results/
+.eval-runs/
+*.log
+.npmrc
+.env
+.env.*

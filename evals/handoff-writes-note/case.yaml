@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: handoff-writes-note
+expected_outcome: |
+  A handoff.md note is written (in .claude/ of the project, or in the memory directory if the host
+  announced one) with the sections Latest session / Recent sessions / Earlier history, frontmatter
+  anchors (updated, project, branch, head), a first line "Resume here" naming the golden test and the
+  chat_pipeline extraction, the no-pull rule with the pinned HEAD 662fcb7, the dropped stateless
+  approach with its reason, and no trace of the staging key. The reply is two sentences, not the note.
+context:
+  scaffold_script: scaffold.sh

@@ -1,0 +1,51 @@
+{
+  "name": "@woody_s/session-skills",
+  "version": "1.0.0",
+  "description": "Session continuity skills for Claude Code and Codex: /handoff saves a recency-weighted handoff note; /restartproj briefs you from git history and that note.",
+  "type": "module",
+  "bin": {
+    "session-skills": "bin/session-skills.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "author": "Woody Song",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChiwooSong/session-skills.git"
+  },
+  "homepage": "https://github.com/ChiwooSong/session-skills#readme",
+  "bugs": {
+    "url": "https://github.com/ChiwooSong/session-skills/issues"
+  },
+  "keywords": [
+    "agent-skills",
+    "claude-code",
+    "codex",
+    "skills",
+    "handoff",
+    "session",
+    "memory",
+    "git"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "skills/",
+    ".claude-plugin/",
+    "README.md",
+    "README.ko.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test tests/install.test.js tests/skills.test.js",
+    "test:package": "node tests/package.test.js",
+    "validate:plugin": "claude plugin validate ./.claude-plugin/plugin.json && claude plugin validate . && claude plugin validate ./skills"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "session-skills",
+  "version": "1.0.0",
+  "description": "Session continuity for Claude Code: /handoff saves a recency-weighted handoff note at the end of a session; /restartproj briefs you from git history and that note at the start of the next one.",
+  "author": {
+    "name": "Woody Song",
+    "url": "https://github.com/ChiwooSong"
+  },
+  "homepage": "https://github.com/ChiwooSong/session-skills",
+  "repository": "https://github.com/ChiwooSong/session-skills",
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "handoff",
+    "session",
+    "memory",
+    "git",
+    "resume",
+    "continuity"
+  ]
+}
