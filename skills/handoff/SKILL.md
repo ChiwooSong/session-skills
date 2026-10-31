@@ -67,7 +67,8 @@ note has gone stale.
 
 Order matters, because the first line is the one that gets read:
 
-1. **Resume here:** the single most concrete next action (a file, a command, a decision awaiting the user).
+1. **Resume here:** the single most concrete next action (a file, a command, a decision awaiting the
+   user), in one or two sentences. Supporting detail goes in the points below, not in this line.
 2. Decisions made, and why.
 3. Tried and abandoned, and why.
 4. Constraints, preferences and deadlines the user stated.
@@ -124,6 +125,8 @@ Merge rules:
    new material into it instead of demoting it.
 6. Legacy notes, with Korean headings (최신 세션 / 최근 세션 / 이전 이력) or without frontmatter anchors:
    read them as the corresponding sections and write the file back in the shape above.
+7. First note for a project: keep all three headings and put `(none yet)` under the two lower ones,
+   so the file has the same shape from day one.
 
 This is how "the newest weighs the most" is implemented: information loses resolution gradually as it
 ages, instead of piling up unread or being dropped.
